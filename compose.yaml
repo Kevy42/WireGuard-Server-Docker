@@ -18,7 +18,7 @@ services:
       - PEERDNS=1.1.1.1 # For client config
       - INTERNAL_SUBNET=10.1.1.0
       - ALLOWEDIPS=10.1.1.1/32 # For client config, check all peers to make sure they've got the correct allowedips
-      - SERVER_ALLOWEDIPS_PEER_vslab=10.0.0.0/18,172.16.0.0/12 # For server config, allows server to reach ips on client subnets
+      # - SERVER_ALLOWEDIPS_PEER_vslab= # For server config, allows server to reach ips on client subnets
       - LOG_CONFS=false
 
     cap_add:
